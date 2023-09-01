@@ -1,1 +1,12 @@
+@import './utilities/mixins.scss';
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
+
+a {
+    color: var(--bs-black);
+    text-decoration: none;
+    &:hover {
+        text-decoration: var(--bs-link-decoration);
+    }
+}

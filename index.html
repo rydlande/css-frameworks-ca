@@ -4,14 +4,73 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CA CSS Frameworks</title>
-    <link rel="stylesheet" href="./dist/css/main.css" />
+    <title>Login</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!--FJERN JS OM DE IKKE BRUKES-->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/index.css" />
   </head>
 
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <nav class="navbar navbar-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">Blogify</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="./profile.html">
+                <span class="bi bi-person-circle"></span>
+                Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <form>
+        <div>
+          <label for="validationServerUsername" class="form-label">
+            Username:
+          </label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationServerUsername"
+            aria-describedby="validationServerUsernameFeedback"
+            required
+          />
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Required</div>
+        </div>
+
+        <div>
+          <label for="password" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          />
+          <div class="valid-feedback"></div>
+          <div class="invalid-feedback">Wrong password</div>
+        </div>
+
+        <div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </form>
+    </main>
+
     <footer></footer>
   </body>
 </html>
