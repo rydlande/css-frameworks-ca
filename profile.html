@@ -5,7 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <!--FJERN JS OM DE IKKE BRUKES-->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./dist/css/index.css" />
   </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">Blogify</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="./profile.html">
+                <span class="bi bi-person-circle"></span>
+                Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <img src="#" alt="users profilpicture" />
+          </div>
+          <div class="col-7">
+            <div class="row">
+              <div class="start">
+                <h1>@username</h1>
+              </div>
+              <div class="end">
+                <button>Follow</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
