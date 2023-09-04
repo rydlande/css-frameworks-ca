@@ -10,3 +10,19 @@ a {
         text-decoration: var(--bs-link-decoration);
     }
 }
+
+.post-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  .search-bar {
+    width: 100%;
+    max-width: 300px;
+  }
+  .sort-options {
+    margin-top: 20px;
+  }
+  .new-post-form {
+    margin-top: 20px;
+  }

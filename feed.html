@@ -9,8 +9,6 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <!--FJERN JS OM DE IKKE BRUKES-->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./dist/css/index.css" />
   </head>
 
@@ -19,12 +17,12 @@
       <nav class="navbar navbar-nav">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="./index.html">Blogify</a>
+            <a class="navbar-brand" href="./feed.html">Blogify</a>
           </div>
 
           <ul class="nav navbar-nav navbar-right">
             <li class="active">
-              <a href="./profile.html">
+              <a href="./index.html">
                 <span class="bi bi-person-circle"></span>
                 Profile
               </a>
@@ -34,7 +32,92 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container">
+        <h1>Feed</h1>
+
+        <!-- SØK -->
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control search-bar"
+            placeholder="Search..."
+          />
+          <button class="btn btn-primary" type="button">Search</button>
+        </div>
+
+        <!-- KATEGORI -->
+        <div class="form-group sort-options">
+          <label for="sortSelect">Sort By:</label>
+          <select class="form-control" id="sortSelect">
+            <option>Newest</option>
+            <option>Oldest</option>
+            <option>Most read</option>
+          </select>
+        </div>
+
+        <!-- POSTS -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="eksempel.jpg"
+                class="card-img-top post-thumbnail"
+                alt="Thumbnail Image to Post"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Post Title 1</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="eksempel.jpg"
+                class="card-img-top post-thumbnail"
+                alt="Thumbnail Image to Post"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Post Title 2</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- LEGG INN FLERE POSTS -->
+        </div>
+
+        <!-- NEW POST -->
+        <div class="new-post-form">
+          <h2>Create a New Post</h2>
+          <form>
+            <div class="form-group">
+              <label for="postTitle">Title</label>
+              <input
+                type="text"
+                class="form-control"
+                id="postTitle"
+                placeholder="Enter title"
+              />
+            </div>
+            <div class="form-group">
+              <label for="postContent">Content</label>
+              <textarea
+                class="form-control"
+                id="postContent"
+                rows="4"
+                placeholder="Enter post content"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post</button>
+          </form>
+        </div>
+      </div>
+    </main>
     <footer></footer>
   </body>
 </html>

@@ -9,8 +9,6 @@
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <!--FJERN JS OM DE IKKE BRUKES-->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./dist/css/index.css" />
   </head>
 
@@ -19,12 +17,12 @@
       <nav class="navbar navbar-nav">
         <div class="container-fluid">
           <div class="navbar-header">
-            <a class="navbar-brand" href="./index.html">Blogify</a>
+            <a class="navbar-brand" href="./feed.html">Blogify</a>
           </div>
 
           <ul class="nav navbar-nav navbar-right">
             <li class="active">
-              <a href="./profile.html">
+              <a href="./index.html">
                 <span class="bi bi-person-circle"></span>
                 Profile
               </a>
@@ -35,24 +33,20 @@
     </header>
 
     <main class="container">
-      <form>
-        <div>
-          <label for="validationServerUsername" class="form-label">
-            Username:
-          </label>
+      <h1>Login or Register</h1>
+      <form action="profile.html" method="post" id="authForm">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
           <input
-            type="text"
+            type="username"
             class="form-control"
-            id="validationServerUsername"
-            aria-describedby="validationServerUsernameFeedback"
+            id="username"
+            name="username"
             required
           />
-          <div class="valid-feedback"></div>
-          <div class="invalid-feedback">Required</div>
         </div>
-
-        <div>
-          <label for="password" class="form-label">Password:</label>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
           <input
             type="password"
             class="form-control"
@@ -61,25 +55,13 @@
             minlength="8"
             required
           />
-          <div class="valid-feedback"></div>
-          <div class="invalid-feedback">Wrong password</div>
         </div>
-
-        <div>
-          <div>
-            <a href="#">Forgot password?</a>
-          </div>
-          <div>
-            <a href="#">New user? Registrer</a>
-          </div>
-        </div>
-
-        <div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <a href="./profile.html" class="btn btn-secondary">Register</a>
       </form>
     </main>
 
+    <!-- FIKS FOOTER -->
     <footer>
       <div class="row">
         <div class="col-4">
