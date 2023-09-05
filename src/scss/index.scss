@@ -1,6 +1,6 @@
 @import './utilities/mixins.scss';
-@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
-@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import '../../dist/css/bootstrap.css';
+@import '../../dist/css/bootstrap-icons.css';
 
 :root {
     --bs-secondary-bg-subtle: #d8c2ff47;
