@@ -1,1 +1,84 @@
+@import './utilities/mixins.scss';
+@import '../../dist/css/bootstrap.css';
+@import '../../dist/css/bootstrap-icons.css';
 
+:root {
+    --bs-secondary-bg-subtle: #d8c2ff47;
+    --bs-secondary-border-subtle: #a988e444;
+}
+
+
+a {
+    color: var(--bs-black);
+    text-decoration: none;
+    &:hover {
+        text-decoration: var(--bs-link-decoration);
+    }
+}
+
+.btn {
+    border: none;
+    background: linear-gradient(135deg, rgba(236,120,245,1) 0%, rgba(208,78,218,1) 35%, rgba(111,44,238,1) 100%);
+    &:hover {
+        background: linear-gradient(45deg, rgba(192,97,199,1) 0%, rgba(167,64,175,1) 35%, rgba(87,35,185,1) 100%);;
+    }
+}
+
+.post-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  .search-bar {
+    width: 100%;
+    max-width: 300px;
+  }
+  .sort-options {
+    margin-top: 20px;
+  }
+  .new-post-form {
+    margin-top: 20px;
+  }
+
+  .footer {
+    background-color: rgb(29, 0, 82);
+    color: var(--bs-white);
+    padding-top: 8px;
+  }
+
+    p {
+        margin: 0;
+    }
+
+    ul.list-inline {
+        list-style: none;
+        padding: 0;
+
+        li.list-inline-item {
+            display: inline;
+            margin-right: 15px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+  
+
+
+.list-group-item {
+    border: none;
+}
+
+
+.card {
+    border: none;
+    --bs-card-title-color: rgb(62, 27, 87);
+    --bs-card-spacer-y: 0.2rem;
+    --bs-card-title-spacer-b: 0.5rem;
+}

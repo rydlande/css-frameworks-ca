@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./dist/css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="./feed.html">Blogify</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="./index.html">
+                <span class="bi bi-person-circle"></span>
+                Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- PROFILE -->
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-md-4">
+            <img
+              src="./media/profileImg.jpg"
+              alt="Profile Image"
+              class="img-fluid rounded-circle"
+            />
+          </div>
+          <div class="col-md-8">
+            <h1>Username</h1>
+            <button class="btn btn-primary">Follow</button>
+            <div class="mt-3">
+              <span class="mr-3"><strong>Following:</strong> 100</span>
+              <span class="mr-3"><strong>Followeres:</strong> 500</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- POSTS -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+            <h2><i class="bi bi-list-nested"></i></h2>
+
+            <ul class="list-group mb-4 list-group-horizontal-lg">
+              <li class="list-group-item list-group-item-action p-2">
+                <a href="#">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">My Daily Mindfulness for Wellness</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </a>
+              </li>
+
+              <li
+                class="list-group-item list-group-item-action list-group-item-secondary p-2"
+              >
+                <a href="#">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Present Moment</h5>
+                    <small>7 days ago</small>
+                  </div>
+                  <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </a>
+              </li>
+
+              <li class="list-group-item list-group-item-action p-2">
+                <a href="#">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">My Daily Mindfulness for Wellness</h5>
+                    <small>3 days ago</small>
+                  </div>
+                  <p class="mb-1">Some placeholder content in a paragraph.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-2"><i class="bi bi-c-circle"></i> Blogify</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">History</a></li>
+              <li class="list-inline-item"><a href="#">Contact</a></li>
+              <li class="list-inline-item"><a href="#">Terms & Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

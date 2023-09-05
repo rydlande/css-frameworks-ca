@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./dist/css/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="./feed.html">Blogify</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="./index.html">
+                <span class="bi bi-person-circle"></span>
+                Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- SØK -->
+        <div class="input-group my-5">
+          <input
+            type="text"
+            class="form-control search-bar"
+            placeholder="Search..."
+          />
+          <button class="btn btn-primary" type="button">Search</button>
+        </div>
+
+        <!-- KATEGORI -->
+        <div class="form-group sort-options w-25 mb-4">
+          <label for="sortSelect">Sort By:</label>
+          <select class="form-control" id="sortSelect">
+            <option>Newest</option>
+            <option>Oldest</option>
+            <option>Most read</option>
+          </select>
+        </div>
+
+        <!-- POSTS -->
+        <div class="row mb-5">
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="#">
+                <img
+                  src="./media/thumbnail-1.jpg"
+                  class="card-img-top post-thumbnail mx-auto d-block"
+                  alt="Thumbnail Image to Post"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">My Daily Mindfulness for Wellness</h5>
+                  <p class="card-text">
+                    Some placeholder content in a paragraph.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="#">
+                <img
+                  src="./media/thumbnail-2.jpg"
+                  class="card-img-top post-thumbnail mx-auto d-block"
+                  alt="Thumbnail Image to Post"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Present Moment</h5>
+                  <p class="card-text">
+                    Some placeholder content in a paragraph.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="#">
+                <img
+                  src="./media/thumbnail-3.jpg"
+                  class="card-img-top post-thumbnail mx-auto d-block"
+                  alt="Thumbnail Image to Post"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Post Title 2</h5>
+                  <p class="card-text">
+                    Some placeholder content in a paragraph.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="#">
+                <img
+                  src="./media/thumbnail-4.jpg"
+                  class="card-img-top post-thumbnail mx-auto d-block"
+                  alt="Thumbnail Image to Post"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Post Title 2</h5>
+                  <p class="card-text">
+                    Some placeholder content in a paragraph.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <a href="#">
+                <img
+                  src="./media/thumbnail-5.jpg"
+                  class="card-img-top post-thumbnail mx-auto d-block"
+                  alt="Thumbnail Image to Post"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Post Title 2</h5>
+                  <p class="card-text">
+                    Some placeholder content in a paragraph.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- NEW POST -->
+        <div class="new-post-form my-5">
+          <h2>Create a New Post</h2>
+          <form>
+            <div class="form-group my-3">
+              <label for="postTitle">Title</label>
+              <input
+                type="text"
+                class="form-control"
+                id="postTitle"
+                placeholder="Enter title"
+                style="max-width: 600px"
+              />
+            </div>
+            <div class="form-group my-3">
+              <label for="postContent">Content</label>
+              <textarea
+                class="form-control"
+                id="postContent"
+                rows="4"
+                placeholder="Enter post content"
+                style="max-width: 600px"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Post</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-2"><i class="bi bi-c-circle"></i> Blogify</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">History</a></li>
+              <li class="list-inline-item"><a href="#">Contact</a></li>
+              <li class="list-inline-item"><a href="#">Terms & Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

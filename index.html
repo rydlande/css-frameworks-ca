@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./dist/css/index.css" />
+  </head>
+
+  <body class="d-flex flex-column h-100">
+    <header>
+      <nav class="navbar navbar-nav">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="./feed.html">Blogify</a>
+          </div>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active">
+              <a href="./index.html">
+                <span class="bi bi-person-circle"></span>
+                Profile
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <h1>Login or Register</h1>
+      <form action="profile.html" method="post" id="authForm">
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            type="username"
+            class="form-control"
+            id="username"
+            name="username"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+        <a href="./profile.html" class="btn btn-secondary">Register</a>
+      </form>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-2"><i class="bi bi-c-circle"></i> Blogify</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="#">History</a></li>
+              <li class="list-inline-item"><a href="#">Contact</a></li>
+              <li class="list-inline-item"><a href="#">Terms & Privacy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
